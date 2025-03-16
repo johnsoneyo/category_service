@@ -6,4 +6,5 @@ edition = "2024"
 [dependencies]
 rand = "0.8.5"
 log = "0.4.26"
+emojic = "0.4.1"
 
