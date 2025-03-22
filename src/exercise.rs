@@ -2,7 +2,7 @@ use crate::data::Department;
 use std::collections::HashMap;
 use std::io;
 use std::str::FromStr;
-use emojic::flat::{DEPARTMENT_STORE, GREEN_APPLE, GREEN_BOOK, INFORMATION, OFFICE_WORKER, PERSON_FEEDING_BABY, POLICE_OFFICER, STOP_SIGN, THUMBS_UP, WARNING, WAVING_HAND};
+use emojic::flat::{DEPARTMENT_STORE, INFORMATION, POLICE_OFFICER, STOP_SIGN, THUMBS_UP, WARNING, WAVING_HAND};
 
 pub fn get_median(v: &mut Vec<i32>) -> Option<i32> {
     match v.capacity() < 3 {
@@ -94,3 +94,30 @@ pub fn add_employee() {
         }
     }
 }
+
+
+// fn main() {
+//     let greeting_file_result = File::open("hello.txt");
+//
+//     let greeting_file = match greeting_file_result {
+//         Ok(file) => file,
+//         Err(error) => panic!("Problem opening the file: {error:?}"),
+//     };
+// }
+
+
+//
+// fn main() {
+//     let mut v = vec![8, 6, 8, 3, 5, 2, 5, 2, 2];
+//
+//     // let median = get_median(&mut v);
+//     // println!("median is {}", median.unwrap_or_default());
+//
+//     let mode = exercise::get_mode(&mut v);
+//     println!("mode is {}", mode.unwrap_or_default());
+// }
+
+// fn main() {
+//
+//     add_employee()
+// }

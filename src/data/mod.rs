@@ -7,19 +7,18 @@ struct Employee {
 
 #[derive(Eq, Hash, PartialEq, Debug)]
 pub enum Department {
-   Sales,
+    Sales,
     Engineering,
 }
 
 impl FromStr for Department {
+    type Err = ();
 
-     type Err = ();
-
-      fn from_str(input: &str) -> Result<Department, Self::Err> {
-         match input {
-             "eng"  => Ok(Department::Engineering),
-             "sal"  => Ok(Department::Sales),
-             _      => Err(())
-         }
-     }
- }
+    fn from_str(input: &str) -> Result<Department, Self::Err> {
+        match input {
+            "eng" => Ok(Department::Engineering),
+            "sal" => Ok(Department::Sales),
+            _ => Err(()),
+        }
+    }
+}
